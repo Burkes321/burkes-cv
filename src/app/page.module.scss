@@ -11,7 +11,7 @@
   }
 
   .headerUnderline {
-    width: 567px;
+    width: 575px;
   }
 
   .linksContainer {
@@ -19,15 +19,5 @@
     justify-content: space-between;
     width: 567px;
     margin-top: 10px;
-
-    .linkContainer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      // background-color: red;
-      width: 151px;
-      font-size: 32px;
-      white-space: nowrap;
-    }
   }
 }

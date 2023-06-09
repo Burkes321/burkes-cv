@@ -1,0 +1,11 @@
+.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 32px;
+  white-space: nowrap;
+
+  .text {
+    margin-left: 10px;
+  }
+}
