@@ -1,7 +1,4 @@
-import Head from 'next/head';
 import css from './page.module.scss';
-import Image from 'next/image';
-import Link from 'next/link';
 
 import githubLogo from '../../public/githubLogo.svg';
 import linkedinLogo from '../../public/linkedinLogo.svg';
@@ -43,10 +40,11 @@ const Home = () => (
       anything
     </div>
     <div className={css.mainContentContainer}>
-      <div className={css.experienceContainer}>
+      <div>
+        {/* TODO: experience items should be their own components */}
         <div>
-          <h2 className={css.experienceTitle}>Experience</h2>
-          <h3 className={css.experienceSectionHeader}>Emplifi</h3>
+          <h2 className={css.sectionTitle}>Experience</h2>
+          <h3 className={css.experienceItemHeader}>Emplifi</h3>
           {/* TODO: want to put a company logo */}
           <p className={css.experienceMeta}>
             Software Engineer <br />
@@ -81,7 +79,7 @@ const Home = () => (
         </div>
 
         <div>
-          <h3 className={css.experienceSectionHeader}>Gooddata</h3>
+          <h3 className={css.experienceItemHeader}>Gooddata</h3>
           {/* TODO: want to put a company logo */}
           <p className={css.experienceMeta}>
             Junior Software Engineer <br />
@@ -114,9 +112,44 @@ const Home = () => (
             </li>
           </ul>
         </div>
+
+        <div>
+          <h3 className={css.experienceItemHeader}>
+            Self Employed / Freelancer
+          </h3>
+          <p className={css.experienceMeta}>
+            Work with UK based firm &ldquo;CloudGuard AI&rdquo; <br />
+            Prague, Czechia
+          </p>
+          <ul className={css.experienceInfo}>
+            <li>
+              Developed custom dashboards as part of a team for customers, based
+              on their requests and needs primarily using React JS with
+              typescript.
+            </li>
+            <li>
+              Experience using the GoodData UI SDK for creating custom
+              components for data visualisation. (SDK is open source).
+            </li>
+            <li>
+              Customised components from third party libraries such as
+              ‘Recharts’ to be used in GoodData applications.
+            </li>
+            <li>
+              Optimised SQL queries generated on the front end of one
+              application to reduce user wait times when submitting custom
+              queries.
+            </li>
+            <li>
+              Experience working with and customising many third party libraries
+              to make them suit our use cases, such as react router, emotion
+              CSS, styled components, recharts, and more.
+            </li>
+          </ul>
+        </div>
       </div>
       <div>
-        <h2 className={css.skillsTitle}>Skills</h2>
+        <h2 className={css.sectionTitle}>Skills</h2>
       </div>
     </div>
   </main>

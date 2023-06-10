@@ -29,32 +29,29 @@
 
   .mainContentContainer {
     width: 1200px;
-    height: 100vh;
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 
-    .experienceContainer {
-      .experienceTitle {
-        font-size: 48px;
-        font-weight: 400;
-      }
+    .sectionTitle {
+      font-size: 48px;
+      font-weight: 400;
+    }
 
-      .experienceSectionHeader {
-        font-size: 32px;
-        font-weight: 400;
-        margin-top: 20px;
-      }
+    .experienceItemHeader {
+      font-size: 32px;
+      font-weight: 400;
+      margin-top: 20px;
+    }
 
-      .experienceMeta {
-        font-size: 20px;
-      }
+    .experienceMeta {
+      font-size: 20px;
+    }
 
-      .experienceInfo {
-        margin-top: 20px;
-        margin-left: 15px;
-        width: 601px;
-      }
+    .experienceInfo {
+      margin-top: 20px;
+      margin-left: 15px;
+      width: 601px;
     }
 
     .skillsTitle {
