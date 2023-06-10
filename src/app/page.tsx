@@ -52,6 +52,32 @@ const Home = () => (
           Prague, Czechia <br />
           January 2023 - Present
         </p>
+
+        <ul className={css.experienceInfo}>
+          <li>
+            Maintaining and upgrading large parts of the existing codebase as
+            part of a team using React, Typescript, node js, redux, redux saga,
+            and react query.
+          </li>
+          <li>
+            Working on implementation of a large-scale design overhaul of
+            existing sections of the application. Taking wireframes from
+            designers and turning them into fully functional web applications.
+          </li>
+          <li>
+            Responsible in part for estimating what work can be done in our
+            sprints.
+          </li>
+          <li>
+            Leading Epics from requirements gathering with designers, ticket
+            creation
+          </li>
+          <li>
+            Got up to speed fast and was able to learn and use unfamiliar
+            technology (redux, redux saga, react query) to start contributing /
+            solving tickets in the first week with the company
+          </li>
+        </ul>
       </div>
       <div>
         <h2 className={css.skillsTitle}>Skills</h2>
