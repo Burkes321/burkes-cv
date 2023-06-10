@@ -20,4 +20,40 @@
     width: 567px;
     margin-top: 10px;
   }
+
+  .bio {
+    width: 576px;
+    margin-top: 50px;
+    font-size: 20px;
+  }
+
+  .mainContentContainer {
+    width: 1200px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    .experienceContainer {
+      .experienceTitle {
+        font-size: 48px;
+        font-weight: 400;
+      }
+
+      .experienceSectionHeader {
+        font-size: 32px;
+        font-weight: 400;
+        margin-top: 20px;
+      }
+
+      .experienceMeta {
+        font-size: 20px;
+      }
+    }
+
+    .skillsTitle {
+      font-size: 48px;
+      font-weight: 400;
+    }
+  }
 }
