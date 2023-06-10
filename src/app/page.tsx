@@ -44,40 +44,76 @@ const Home = () => (
     </div>
     <div className={css.mainContentContainer}>
       <div className={css.experienceContainer}>
-        <h2 className={css.experienceTitle}>Experience</h2>
-        <h3 className={css.experienceSectionHeader}>Emplifi</h3>
-        {/* TODO: want to put a company logo on each */}
-        <p className={css.experienceMeta}>
-          Software Engineer <br />
-          Prague, Czechia <br />
-          January 2023 - Present
-        </p>
+        <div>
+          <h2 className={css.experienceTitle}>Experience</h2>
+          <h3 className={css.experienceSectionHeader}>Emplifi</h3>
+          {/* TODO: want to put a company logo */}
+          <p className={css.experienceMeta}>
+            Software Engineer <br />
+            Prague, Czechia <br />
+            January 2023 - Present
+          </p>
+          <ul className={css.experienceInfo}>
+            <li>
+              Maintaining and upgrading large parts of the existing codebase as
+              part of a team using React, Typescript, node js, redux, redux
+              saga, and react query.
+            </li>
+            <li>
+              Working on implementation of a large-scale design overhaul of
+              existing sections of the application. Taking wireframes from
+              designers and turning them into fully functional web applications.
+            </li>
+            <li>
+              Responsible in part for estimating what work can be done in our
+              sprints.
+            </li>
+            <li>
+              Leading Epics from requirements gathering with designers, ticket
+              creation
+            </li>
+            <li>
+              Got up to speed fast and was able to learn and use unfamiliar
+              technology (redux, redux saga, react query) to start contributing
+              / solving tickets in the first week with the company
+            </li>
+          </ul>
+        </div>
 
-        <ul className={css.experienceInfo}>
-          <li>
-            Maintaining and upgrading large parts of the existing codebase as
-            part of a team using React, Typescript, node js, redux, redux saga,
-            and react query.
-          </li>
-          <li>
-            Working on implementation of a large-scale design overhaul of
-            existing sections of the application. Taking wireframes from
-            designers and turning them into fully functional web applications.
-          </li>
-          <li>
-            Responsible in part for estimating what work can be done in our
-            sprints.
-          </li>
-          <li>
-            Leading Epics from requirements gathering with designers, ticket
-            creation
-          </li>
-          <li>
-            Got up to speed fast and was able to learn and use unfamiliar
-            technology (redux, redux saga, react query) to start contributing /
-            solving tickets in the first week with the company
-          </li>
-        </ul>
+        <div>
+          <h3 className={css.experienceSectionHeader}>Gooddata</h3>
+          {/* TODO: want to put a company logo */}
+          <p className={css.experienceMeta}>
+            Junior Software Engineer <br />
+            Prague, Czechia <br />
+            August 2021 - December 2022
+          </p>
+          <ul className={css.experienceInfo}>
+            <li>
+              Developed custom dashboards as part of a team for customers, based
+              on their requests and needs primarily using React JS with
+              typescript.
+            </li>
+            <li>
+              Experience using the GoodData UI SDK for creating custom
+              components for data visualisation. (SDK is open source).
+            </li>
+            <li>
+              Customised components from third party libraries such as
+              ‘Recharts’ to be used in GoodData applications.
+            </li>
+            <li>
+              Optimised SQL queries generated on the front end of one
+              application to reduce user wait times when submitting custom
+              queries.
+            </li>
+            <li>
+              Experience working with and customising many third party libraries
+              to make them suit our use cases, such as react router, emotion
+              CSS, styled components, recharts, and more.
+            </li>
+          </ul>
+        </div>
       </div>
       <div>
         <h2 className={css.skillsTitle}>Skills</h2>
