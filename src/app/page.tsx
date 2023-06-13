@@ -1,16 +1,19 @@
-import css from './page.module.scss';
-
 import githubLogo from '../../public/githubLogo.svg';
 import linkedinLogo from '../../public/linkedinLogo.svg';
 import gmailLogo from '../../public/gmailLogo.svg';
 
 import { HeaderLinkWithImage } from '~/components';
+import { Text } from '~/components/typography';
+
+import css from './page.module.scss';
 
 const Home = () => (
   <main className={css.pageContainer}>
     {/* TODO: this could be better with a flex container for all header
     and aligning the title to the flex start */}
-    <h1 className={css.header}>Sam Burke</h1>
+    <Text fontSize="72px" className={css.header}>
+      Sam Burke
+    </Text>
     <hr className={css.headerUnderline} />
     <div className={css.linksContainer}>
       <HeaderLinkWithImage
@@ -32,25 +35,27 @@ const Home = () => (
         alt="gmail logo"
       />
     </div>
-    <div className={css.bio}>
+    <Text className={css.bio} fontSize="20px">
       Full-stack software engineer currently working at Emplifi in Czechia.
       Experience working as part of a team to develop complex data analytics
       applications for business users. Primary stack of React, Next js,
       Typescript, React query, node, express, and postgres. Willing to learn
-      anything
-    </div>
+      anything.
+    </Text>
     <div className={css.mainContentContainer}>
       <div>
         {/* TODO: experience items should be their own components */}
         <div>
-          <h2 className={css.sectionTitle}>Experience</h2>
-          <h3 className={css.experienceItemHeader}>Emplifi</h3>
+          <Text fontSize="48px">Experience</Text>
+          <Text className={css.experienceItemHeader} fontSize="32px">
+            Emplifi
+          </Text>
           {/* TODO: want to put a company logo */}
-          <p className={css.experienceMeta}>
+          <Text fontSize="20px">
             Software Engineer <br />
             Prague, Czechia <br />
             January 2023 - Present
-          </p>
+          </Text>
           <ul className={css.experienceInfo}>
             <li>
               Maintaining and upgrading large parts of the existing codebase as
@@ -79,7 +84,9 @@ const Home = () => (
         </div>
 
         <div>
-          <h3 className={css.experienceItemHeader}>Gooddata</h3>
+          <Text className={css.experienceItemHeader} fontSize="32px">
+            Gooddata
+          </Text>
           {/* TODO: want to put a company logo */}
           <p className={css.experienceMeta}>
             Junior Software Engineer <br />
@@ -149,7 +156,7 @@ const Home = () => (
         </div>
       </div>
       <div>
-        <h2 className={css.sectionTitle}>Skills</h2>
+        <Text fontSize="48px">Skills</Text>
       </div>
     </div>
   </main>

@@ -5,8 +5,6 @@
   align-items: center;
 
   .header {
-    font-size: 72px;
-    font-weight: 400;
     margin-right: 218px;
   }
 
@@ -24,7 +22,6 @@
   .bio {
     width: 576px;
     margin-top: 50px;
-    font-size: 20px;
   }
 
   .mainContentContainer {
@@ -33,19 +30,8 @@
     justify-content: space-between;
     margin-top: 50px;
 
-    .sectionTitle {
-      font-size: 48px;
-      font-weight: 400;
-    }
-
     .experienceItemHeader {
-      font-size: 32px;
-      font-weight: 400;
       margin-top: 20px;
-    }
-
-    .experienceMeta {
-      font-size: 20px;
     }
 
     .experienceInfo {
