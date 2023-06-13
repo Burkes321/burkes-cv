@@ -23,6 +23,13 @@ const GoodDataMeta = (
   </Text>
 );
 
+const SelfEmployedMeta = (
+  <Text fontSize="20px">
+    Work with UK based firm &ldquo;CloudGuard AI&rdquo; <br />
+    Prague, Czechia
+  </Text>
+);
+
 const Home = () => (
   <main className={css.pageContainer}>
     {/* TODO: this could be better with a flex container for all header
@@ -51,6 +58,7 @@ const Home = () => (
         alt="gmail logo"
       />
     </div>
+
     <Text className={css.bio} fontSize="20px">
       Full-stack software engineer currently working at Emplifi in Czechia.
       Experience working as part of a team to develop complex data analytics
@@ -58,6 +66,7 @@ const Home = () => (
       Typescript, React query, node, express, and postgres. Willing to learn
       anything.
     </Text>
+
     <div className={css.mainContentContainer}>
       <div>
         <Text fontSize="48px">Experience</Text>
@@ -118,14 +127,10 @@ const Home = () => (
           </ul>
         </ExperienceItem>
 
-        <div>
-          <h3 className={css.experienceItemHeader}>
-            Self Employed / Freelancer
-          </h3>
-          <p className={css.experienceMeta}>
-            Work with UK based firm &ldquo;CloudGuard AI&rdquo; <br />
-            Prague, Czechia
-          </p>
+        <ExperienceItem
+          companyName="Self Employed / Freelancer"
+          meta={SelfEmployedMeta}
+        >
           <ul className={css.experienceInfo}>
             <li>
               Developed custom dashboards as part of a team for customers, based
@@ -151,7 +156,7 @@ const Home = () => (
               CSS, styled components, recharts, and more.
             </li>
           </ul>
-        </div>
+        </ExperienceItem>
       </div>
       <div>
         <Text fontSize="48px">Skills</Text>
