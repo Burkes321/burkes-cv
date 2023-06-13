@@ -1,18 +1,20 @@
 import { ReactNode } from 'react';
 import { Text } from './typography';
 
+import css from './ExperienceItem.module.scss';
+
 interface Props {
   companyName: string;
   meta: ReactNode;
-  // TODO: here for future, not implemented yet
-  logo?: any;
-  // used for the detail
   children: ReactNode;
 }
 
-export const ExperienceItem = ({
-  companyName,
-  meta,
-  logo,
-  children,
-}: Props) => <Text fontSize="48px">{companyName}</Text>;
+export const ExperienceItem = ({ companyName, meta, children }: Props) => (
+  <>
+    <Text className={css.header} fontSize="32px">
+      {companyName}
+    </Text>
+    <Text fontSize="20px">{meta}</Text>
+    {children}
+  </>
+);

@@ -2,10 +2,26 @@ import githubLogo from '../../public/githubLogo.svg';
 import linkedinLogo from '../../public/linkedinLogo.svg';
 import gmailLogo from '../../public/gmailLogo.svg';
 
-import { HeaderLinkWithImage } from '~/components';
+import { HeaderLinkWithImage, ExperienceItem } from '~/components';
 import { Text } from '~/components/typography';
 
 import css from './page.module.scss';
+
+const EmplifiMeta = (
+  <Text fontSize="20px">
+    Software Engineer <br />
+    Prague, Czechia <br />
+    January 2023 - Present
+  </Text>
+);
+
+const GoodDataMeta = (
+  <Text fontSize="20px">
+    Junior Software Engineer <br />
+    Prague, Czechia <br />
+    August 2021 - December 2022
+  </Text>
+);
 
 const Home = () => (
   <main className={css.pageContainer}>
@@ -44,18 +60,9 @@ const Home = () => (
     </Text>
     <div className={css.mainContentContainer}>
       <div>
-        {/* TODO: experience items should be their own components */}
-        <div>
-          <Text fontSize="48px">Experience</Text>
-          <Text className={css.experienceItemHeader} fontSize="32px">
-            Emplifi
-          </Text>
-          {/* TODO: want to put a company logo */}
-          <Text fontSize="20px">
-            Software Engineer <br />
-            Prague, Czechia <br />
-            January 2023 - Present
-          </Text>
+        <Text fontSize="48px">Experience</Text>
+        <ExperienceItem companyName="Emplifi" meta={EmplifiMeta}>
+          {' '}
           <ul className={css.experienceInfo}>
             <li>
               Maintaining and upgrading large parts of the existing codebase as
@@ -81,18 +88,9 @@ const Home = () => (
               / solving tickets in the first week with the company
             </li>
           </ul>
-        </div>
+        </ExperienceItem>
 
-        <div>
-          <Text className={css.experienceItemHeader} fontSize="32px">
-            Gooddata
-          </Text>
-          {/* TODO: want to put a company logo */}
-          <p className={css.experienceMeta}>
-            Junior Software Engineer <br />
-            Prague, Czechia <br />
-            August 2021 - December 2022
-          </p>
+        <ExperienceItem companyName="GoodData" meta={GoodDataMeta}>
           <ul className={css.experienceInfo}>
             <li>
               Developed custom dashboards as part of a team for customers, based
@@ -118,7 +116,7 @@ const Home = () => (
               CSS, styled components, recharts, and more.
             </li>
           </ul>
-        </div>
+        </ExperienceItem>
 
         <div>
           <h3 className={css.experienceItemHeader}>
