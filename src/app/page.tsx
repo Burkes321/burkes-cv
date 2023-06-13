@@ -160,6 +160,10 @@ const Home = () => (
       </div>
       <div>
         <Text fontSize="48px">Skills</Text>
+
+        <Text className={css.skillsSectionSubHeader} fontSize="32px">
+          Front-end
+        </Text>
       </div>
     </div>
   </main>
