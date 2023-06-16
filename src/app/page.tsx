@@ -1,3 +1,5 @@
+'use client';
+
 import githubLogo from '../../public/githubLogo.svg';
 import linkedinLogo from '../../public/linkedinLogo.svg';
 import gmailLogo from '../../public/gmailLogo.svg';
@@ -157,6 +159,10 @@ const Home = () => (
             </li>
           </ul>
         </ExperienceItem>
+
+        <Text className={css.educationHeader} fontSize="48px">
+          Education
+        </Text>
       </div>
       <div>
         <Text fontSize="48px">Skills</Text>
@@ -164,6 +170,34 @@ const Home = () => (
         <Text className={css.skillsSectionSubHeader} fontSize="32px">
           Front-end
         </Text>
+
+        {/* TODO: Would be nice to have the logos of each tech here */}
+        <ul className={css.skillsList}>
+          <li>HTML</li>
+          <li>CSS (sass, css-in-js) </li>
+          <li>Javascript / Typescript</li>
+          <li>React, React Query</li>
+          <li>Redux, React-redux, redux saga</li>
+        </ul>
+
+        <Text className={css.skillsSectionSubHeader} fontSize="32px">
+          Back-end
+        </Text>
+
+        <ul className={css.skillsList}>
+          <li>Node JS, Express</li>
+          <li>PHP, Laravel</li>
+          <li>MySQL, PostgresSQL, MongoDB</li>
+        </ul>
+
+        <Text className={css.skillsSectionSubHeader} fontSize="32px">
+          Other Technologies
+        </Text>
+
+        <ul className={css.skillsList}>
+          <li>Python - beginner knowledge</li>
+          <li>C++ - beginner knowledge</li>
+        </ul>
       </div>
     </div>
   </main>
