@@ -10,26 +10,41 @@ import { Text } from '~/components/typography';
 import css from './page.module.scss';
 
 const EmplifiMeta = (
-  <Text fontSize="20px">
+  <>
     Software Engineer <br />
     Prague, Czechia <br />
     January 2023 - Present
-  </Text>
+  </>
 );
 
 const GoodDataMeta = (
-  <Text fontSize="20px">
+  <>
     Junior Software Engineer <br />
     Prague, Czechia <br />
     August 2021 - December 2022
-  </Text>
+  </>
 );
 
 const SelfEmployedMeta = (
-  <Text fontSize="20px">
+  <>
     Work with UK based firm &ldquo;CloudGuard AI&rdquo; <br />
     Prague, Czechia
-  </Text>
+  </>
+);
+
+const bootcampMeta = (
+  <>
+    Student <br />
+    Prague, Czechia <br />
+    January 2021 - April 2021
+  </>
+);
+
+const universityMeta = (
+  <>
+    Mathematics, 2:2 Bsc hons <br />
+    2015 - 2018
+  </>
 );
 
 const Home = () => (
@@ -135,27 +150,11 @@ const Home = () => (
         >
           <ul className={css.experienceInfo}>
             <li>
-              Developed custom dashboards as part of a team for customers, based
-              on their requests and needs primarily using React JS with
-              typescript.
-            </li>
-            <li>
-              Experience using the GoodData UI SDK for creating custom
-              components for data visualisation. (SDK is open source).
-            </li>
-            <li>
-              Customised components from third party libraries such as
-              ‘Recharts’ to be used in GoodData applications.
-            </li>
-            <li>
-              Optimised SQL queries generated on the front end of one
-              application to reduce user wait times when submitting custom
-              queries.
-            </li>
-            <li>
-              Experience working with and customising many third party libraries
-              to make them suit our use cases, such as react router, emotion
-              CSS, styled components, recharts, and more.
+              Sole front end developer - over the course of 3 months created a
+              custom data visualisation dashboard, which used data from
+              Microsoft Sentinel to display cyber-security insights to
+              customers. Next js, React, typescript and recharts were the main
+              libraries used, along with others.
             </li>
           </ul>
         </ExperienceItem>
@@ -163,6 +162,44 @@ const Home = () => (
         <Text className={css.educationHeader} fontSize="48px">
           Education
         </Text>
+
+        {/* TODO: need logo */}
+        <ExperienceItem
+          companyName="Coding Bootcamp Praha, Data4You"
+          meta={bootcampMeta}
+        >
+          <ul className={css.experienceInfo}>
+            <li>
+              Full-stack web development course taking students from little to
+              no experience, to competent full-stack developers.
+            </li>
+            <li>
+              Completed multiple projects throughout: Coffee shop website,
+              database management system for veterinary clinic, real time flight
+              tracking app
+            </li>
+            <li>
+              Final full-stack project aggregating and recommending hiking
+              routes to users around the Czech Republic.
+            </li>
+          </ul>
+        </ExperienceItem>
+
+        <ExperienceItem
+          companyName="Lancaster University"
+          meta={universityMeta}
+        >
+          <ul className={css.experienceInfo}>
+            <li>
+              Modules: Financial mathematics, stochastic processes, lebesgue
+              integration, medical statistics, real analysis, complex analysis.
+            </li>
+            <li>
+              Vector calculus final project and presentation to all other
+              students on the course.
+            </li>
+          </ul>
+        </ExperienceItem>
       </div>
       <div>
         <Text fontSize="48px">Skills</Text>
@@ -171,7 +208,7 @@ const Home = () => (
           Front-end
         </Text>
 
-        {/* TODO: Would be nice to have the logos of each tech here */}
+        {/* TODO: Insert the logo of each technology here */}
         <ul className={css.skillsList}>
           <li>HTML</li>
           <li>CSS (sass, css-in-js) </li>
