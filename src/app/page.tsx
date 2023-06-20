@@ -204,6 +204,32 @@ const Home = () => (
           <li>Python - beginner knowledge</li>
           <li>C++ - beginner knowledge</li>
         </ul>
+
+        <Text className={css.softSkillItem} fontSize="20px">
+          Strong knowledge of Agile Methodology and the importance of keeping
+          sprints on track
+        </Text>
+
+        <Text className={css.softSkillItem} fontSize="20px">
+          Experience working with designers and stakeholders to turn designs
+          into functional software
+        </Text>
+
+        <Text className={css.softSkillItem} fontSize="20px">
+          Native English speaker, Czech A2 level
+        </Text>
+
+        <Text className={css.softSkillItem} fontSize="20px">
+          Teamwork - All projects in both my current and past positions, and in
+          my freelance work have necessitated working heavily in teams to
+          deliver the best outcomes for clients.
+        </Text>
+
+        <Text className={css.softSkillItem} fontSize="20px">
+          Dealing directly with customers to come up with estimates of work and
+          scope. Responsibility to analyse what development work is feasible in
+          specific timeframes, and to stick to those estimates.
+        </Text>
       </div>
     </div>
   </main>
