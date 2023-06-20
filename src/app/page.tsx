@@ -4,48 +4,17 @@ import githubLogo from '../../public/githubLogo.svg';
 import linkedinLogo from '../../public/linkedinLogo.svg';
 import gmailLogo from '../../public/gmailLogo.svg';
 
+import {
+  EmplifiMeta,
+  GoodDataMeta,
+  SelfEmployedMeta,
+  BootcampMeta,
+  UniversityMeta,
+} from './const';
 import { HeaderLinkWithImage, ExperienceItem } from '~/components';
 import { Text } from '~/components/typography';
 
 import css from './page.module.scss';
-
-const EmplifiMeta = (
-  <>
-    Software Engineer <br />
-    Prague, Czechia <br />
-    January 2023 - Present
-  </>
-);
-
-const GoodDataMeta = (
-  <>
-    Junior Software Engineer <br />
-    Prague, Czechia <br />
-    August 2021 - December 2022
-  </>
-);
-
-const SelfEmployedMeta = (
-  <>
-    Work with UK based firm &ldquo;CloudGuard AI&rdquo; <br />
-    Prague, Czechia
-  </>
-);
-
-const bootcampMeta = (
-  <>
-    Student <br />
-    Prague, Czechia <br />
-    January 2021 - April 2021
-  </>
-);
-
-const universityMeta = (
-  <>
-    Mathematics, 2:2 Bsc hons <br />
-    2015 - 2018
-  </>
-);
 
 const Home = () => (
   <main className={css.pageContainer}>
@@ -166,7 +135,7 @@ const Home = () => (
         {/* TODO: need logo */}
         <ExperienceItem
           companyName="Coding Bootcamp Praha, Data4You"
-          meta={bootcampMeta}
+          meta={BootcampMeta}
         >
           <ul className={css.experienceInfo}>
             <li>
@@ -187,7 +156,7 @@ const Home = () => (
 
         <ExperienceItem
           companyName="Lancaster University"
-          meta={universityMeta}
+          meta={UniversityMeta}
         >
           <ul className={css.experienceInfo}>
             <li>
