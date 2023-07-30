@@ -171,7 +171,9 @@ const Home = () => (
         </ExperienceItem>
       </div>
       <div>
-        <Text fontSize="48px">Skills</Text>
+        <Text fontSize="48px" className={css.skillsSectionHeader}>
+          Skills
+        </Text>
 
         <Text className={css.skillsSectionSubHeader} fontSize="32px">
           Front-end
