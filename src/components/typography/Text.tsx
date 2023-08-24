@@ -8,12 +8,9 @@ interface Props {
 }
 
 export const Text = ({
+  // TODO: once all the inline styles are removed, also remove the style props
   fontSize = '16px',
   fontWeight = 400,
   children,
   className,
-}: Props) => (
-  <p className={className} style={{ fontSize, fontWeight }}>
-    {children}
-  </p>
-);
+}: Props) => <p className={className}>{children}</p>;

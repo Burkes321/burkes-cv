@@ -1,3 +1,10 @@
+$mobile-small: 654px;
+
+// $main-header-size-normal: 72px;
+// $main-header-size-mobile: 48px;
+// $section-header-size-normal: 48px;
+// $section-header-size-mobile: 30px;
+
 .pageContainer {
   min-height: 100vh;
   display: flex;
@@ -6,10 +13,20 @@
 
   .header {
     margin-right: 218px;
+    font-size: var(--main-header-size-normal);
+
+    @media (max-width: $mobile-small) {
+      font-size: var(--main-header-size-mobile);
+      margin-right: 20px;
+    }
   }
 
   .headerUnderline {
     width: 575px;
+
+    @media (max-width: $mobile-small) {
+      width: 257px;
+    }
   }
 
   .linksContainer {
@@ -17,11 +34,21 @@
     justify-content: space-between;
     width: 567px;
     margin-top: 10px;
+
+    @media (max-width: $mobile-small) {
+      flex-direction: column;
+      width: 113px;
+      height: 120px;
+    }
   }
 
   .bio {
     width: 576px;
     margin-top: 50px;
+
+    @media (max-width: $mobile-small) {
+      width: 341px;
+    }
   }
 
   .mainContentContainer {
@@ -38,6 +65,18 @@
     @media (max-width: 1000px) {
       width: auto;
       display: block;
+    }
+
+    @media (max-width: $mobile-small) {
+      width: 341px;
+    }
+
+    .experienceHeader {
+      font-size: var(--section-header-size-normal);
+
+      @media (max-width: $mobile-small) {
+        font-size: var(--section-header-size-mobile);
+      }
     }
 
     .experienceInfo {

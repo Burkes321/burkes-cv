@@ -1,3 +1,9 @@
 .header {
   margin-top: 20px;
+  font-size: var(--sub-header-size-normal);
+
+  // TODO: must find a way to make this size a global variable
+  @media (max-width: 654px) {
+    font-size: var(--sub-header-size-mobile);
+  }
 }

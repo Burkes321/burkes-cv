@@ -20,9 +20,7 @@ const Home = () => (
   <main className={css.pageContainer}>
     {/* TODO: this could be better with a flex container for all header
     and aligning the title to the flex start */}
-    <Text fontSize="72px" className={css.header}>
-      Sam Burke
-    </Text>
+    <Text className={css.header}>Sam Burke</Text>
     <hr className={css.headerUnderline} />
     <div className={css.linksContainer}>
       <HeaderLinkWithImage
@@ -55,7 +53,7 @@ const Home = () => (
 
     <div className={css.mainContentContainer}>
       <div>
-        <Text fontSize="48px">Experience</Text>
+        <Text className={css.experienceHeader}>Experience</Text>
         <ExperienceItem companyName="Emplifi" meta={EmplifiMeta}>
           {' '}
           <ul className={css.experienceInfo}>
