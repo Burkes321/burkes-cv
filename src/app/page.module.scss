@@ -82,15 +82,27 @@ $mobile-small: 654px;
     .experienceInfo {
       margin-left: 15px;
       width: 601px;
+
+      @media (max-width: $mobile-small) {
+        width: 310px;
+      }
     }
 
     .educationHeader {
       margin-top: 20px;
+      font-size: var(--section-header-size-normal);
+
+      @media (max-width: $mobile-small) {
+        font-size: var(--section-header-size-mobile);
+      }
     }
 
     .skillsSectionHeader {
+      font-size: var(--section-header-size-normal);
+
       @media (max-width: 1000px) {
         margin-top: 20px;
+        font-size: var(--section-header-size-mobile);
       }
     }
 

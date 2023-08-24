@@ -43,7 +43,7 @@ const Home = () => (
       />
     </div>
 
-    <Text className={css.bio} fontSize="20px">
+    <Text className={css.bio}>
       Full-stack software engineer currently working at Emplifi in Czechia.
       Experience working as part of a team to develop complex data analytics
       applications for business users. Primary stack of React, Next js,
@@ -126,9 +126,7 @@ const Home = () => (
           </ul>
         </ExperienceItem>
 
-        <Text className={css.educationHeader} fontSize="48px">
-          Education
-        </Text>
+        <Text className={css.educationHeader}>Education</Text>
 
         {/* TODO: need logo */}
         <ExperienceItem
@@ -169,9 +167,7 @@ const Home = () => (
         </ExperienceItem>
       </div>
       <div>
-        <Text fontSize="48px" className={css.skillsSectionHeader}>
-          Skills
-        </Text>
+        <Text className={css.skillsSectionHeader}>Skills</Text>
 
         <Text className={css.skillsSectionSubHeader} fontSize="32px">
           Front-end
