@@ -44,11 +44,12 @@ const Home = () => (
     </div>
 
     <Text className={css.bio}>
-      Full-stack software engineer currently working at Emplifi in Czechia.
-      Experience working as part of a team to develop complex data analytics
-      applications for business users. Primary stack of React, Next js,
-      Typescript, React query, node, express, and postgres. Willing to learn
-      anything.
+      Dedicated and driven Full stack Software Engineer with experience working
+      as part of a team to develop and ship complex data analytics applications
+      for business users. Primary technologies are React, Next js, Node js,
+      Typescript, recharts. Able to pick up new technologies quickly and
+      self-sufficiently, and willing to learn anything. Graduated from Lancaster
+      university with Bsc in Mathematics.
     </Text>
 
     <div className={css.mainContentContainer}>
@@ -97,11 +98,6 @@ const Home = () => (
             <li>
               Customised components from third party libraries such as
               ‘Recharts’ to be used in GoodData applications.
-            </li>
-            <li>
-              Optimised SQL queries generated on the front end of one
-              application to reduce user wait times when submitting custom
-              queries.
             </li>
             <li>
               Experience working with and customising many third party libraries
@@ -169,9 +165,7 @@ const Home = () => (
       <div>
         <Text className={css.skillsSectionHeader}>Skills</Text>
 
-        <Text className={css.skillsSectionSubHeader} fontSize="32px">
-          Front-end
-        </Text>
+        <Text className={css.skillsSectionSubHeader}>Front-end</Text>
 
         {/* TODO: Insert the logo of each technology here */}
         <ul className={css.skillsList}>
@@ -201,30 +195,48 @@ const Home = () => (
           <li>C++ - beginner knowledge</li>
         </ul>
 
-        <Text className={css.softSkillItem} fontSize="20px">
+        <Text className={css.softSkillItem}>
           Strong knowledge of Agile Methodology and the importance of keeping
           sprints on track
         </Text>
 
-        <Text className={css.softSkillItem} fontSize="20px">
+        <Text className={css.softSkillItem}>
           Experience working with designers and stakeholders to turn designs
           into functional software
         </Text>
 
-        <Text className={css.softSkillItem} fontSize="20px">
+        <Text className={css.softSkillItem}>
           Native English speaker, Czech A2 level
         </Text>
 
-        <Text className={css.softSkillItem} fontSize="20px">
+        <Text className={css.softSkillItem}>
           Teamwork - All projects in both my current and past positions, and in
           my freelance work have necessitated working heavily in teams to
           deliver the best outcomes for clients.
         </Text>
 
-        <Text className={css.softSkillItem} fontSize="20px">
+        <Text className={css.softSkillItem}>
           Dealing directly with customers to come up with estimates of work and
           scope. Responsibility to analyse what development work is feasible in
           specific timeframes, and to stick to those estimates.
+        </Text>
+
+        <Text className={css.achievementsHeader}>Achievements</Text>
+
+        <Text className={css.softSkillItem}>
+          In the space of only a few months went from almost zero knowledge of
+          web development to being able to craft full stack web applications.
+        </Text>
+
+        <Text className={css.softSkillItem}>
+          Led an epic for the redesign of an entire section of the settings of
+          our application, going from react &lt; 16.8 to modern react, removing
+          redux and implementing function components and react query
+        </Text>
+
+        <Text className={css.softSkillItem}>
+          Optimising SQL queries on the front end of one application to decrease
+          user wait times when submitting a custom query
         </Text>
       </div>
     </div>
