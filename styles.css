@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  
+  /* Custom brand colors for premium theme */
+  --color-brand-bg: #0b0f19;
+  --color-brand-card: #151b2c;
+  --color-brand-border: #232c45;
+  --color-brand-accent: #3b82f6;
+  --color-brand-glow: rgba(59, 130, 246, 0.15);
+}
+
+/* Base style tweaks */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-bg);
+  color: #f1f5f9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-accent);
+}
+
+/* Custom print overrides */
+@media print {
+  @page {
+    margin: 1.2cm 1.5cm 1.2cm 1.5cm;
+  }
+  
+  body {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    color: #111827 !important;
+    font-size: 10pt !important;
+  }
+  
+  /* Hide visual elements meant only for screens */
+  .no-print,
+  .glow-effect {
+    display: none !important;
+  }
+  
+  /* Force dark elements to print clearly as black on white */
+  h1, h2, h3, h4, h5, h6 {
+    color: #111827 !important;
+  }
+  
+  p, li, span, div, time {
+    color: #374151 !important;
+  }
+  
+  /* Layout adjustments: stack sidebars/grids nicely */
+  .print-grid-layout {
+    display: grid !important;
+    grid-template-columns: 2.2fr 1fr !important;
+    gap: 1.5rem !important;
+  }
+  
+  /* Remove background containers for print */
+  .print-no-bg {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+  
+  /* Print borders where appropriate */
+  .print-border-b {
+    border-bottom: 1px solid #e5e7eb !important;
+    padding-bottom: 0.5rem !important;
+  }
+  
+  /* Avoid page breaks inside experience or education blocks */
+  .print-avoid-break {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+  
+  /* Make sure link URLs are readable */
+  .print-link::after {
+    content: " (" attr(href) ")";
+    font-size: 8pt !important;
+    color: #6b7280 !important;
+    text-decoration: none !important;
+  }
+}
