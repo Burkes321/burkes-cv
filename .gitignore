@@ -1,3 +1,4 @@
 node_modules
 dist
+public/output.css
 .DS_Store

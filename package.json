@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "tailwindcss -i styles.css -o dist/output.css --minify",
-    "watch:css": "tailwindcss -i styles.css -o dist/output.css --watch",
-    "serve": "live-server --port=8080",
+    "build": "tailwindcss -i styles.css -o public/output.css --minify",
+    "watch:css": "tailwindcss -i styles.css -o public/output.css --watch",
+    "serve": "live-server public --port=8080",
     "dev": "concurrently \"npm run watch:css\" \"npm run serve\""
   },
   "devDependencies": {
