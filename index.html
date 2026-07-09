@@ -9,19 +9,15 @@
   <!-- CSS Stylesheet (compiled by Tailwind) -->
   <link href="dist/output.css" rel="stylesheet">
 </head>
-<body class="bg-brand-bg text-slate-300 antialiased min-h-screen selection:bg-blue-500 selection:text-white">
-  
-  <!-- Ambient Gradient Glow Effects (hidden in print) -->
-  <div class="no-print absolute top-0 left-1/4 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none -z-10"></div>
-  <div class="no-print absolute top-1/3 right-1/4 w-[400px] h-[400px] bg-indigo-500/5 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+<body class="bg-brand-bg text-slate-700 antialiased min-h-screen selection:bg-brand-accent selection:text-white">
 
   <!-- Outer Container -->
   <div class="max-w-6xl mx-auto px-6 py-8 md:py-16">
 
     <!-- Action Bar / Print Button (hidden in print) -->
     <div class="no-print flex justify-end mb-8">
-      <button onclick="window.print()" class="inline-flex items-center gap-2 px-4 py-2 bg-brand-card hover:bg-slate-800 border border-brand-border hover:border-slate-600 rounded-xl text-sm font-semibold text-slate-200 transition-all cursor-pointer shadow-sm hover:shadow-md active:scale-95">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-4 h-4 text-blue-400">
+      <button onclick="window.print()" class="inline-flex items-center gap-2 px-4 py-2 bg-brand-card hover:bg-slate-200/80 border border-brand-border rounded-xl text-sm font-semibold text-slate-700 transition-all cursor-pointer shadow-sm hover:shadow active:scale-95">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-4 h-4 text-brand-accent">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229-2.523a1.125 1.125 0 0 0-1.12-1.227H7.231c-.662 0-1.18.568-1.12 1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-14.326 0C3.768 7.28 3 8.214 3 9.456v6.294a2.25 2.25 0 0 0 2.25 2.25h1.091M12 10.125h.008v.008H12v-.008Z" />
         </svg>
         Print CV / Save PDF
@@ -32,36 +28,36 @@
     <header class="border-b border-brand-border print-border-b pb-8 mb-10">
       <div class="flex flex-col md:flex-row md:justify-between md:items-end gap-6">
         <div>
-          <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-2">
+          <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-2">
             Samuel Burke
           </h1>
-          <p class="text-lg md:text-xl text-blue-400 font-semibold tracking-wide uppercase">
+          <p class="text-lg md:text-xl text-brand-accent font-semibold tracking-wide uppercase">
             Full-Stack Software Engineer
           </p>
         </div>
         
         <!-- Contact & Links -->
-        <div class="flex flex-col gap-2.5 text-sm text-slate-400">
-          <a href="mailto:sam.burke99@gmail.com" class="print-link inline-flex items-center gap-2 hover:text-white transition-colors group">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-4 h-4 text-blue-400 group-hover:text-blue-300">
+        <div class="flex flex-col gap-2.5 text-sm text-slate-600">
+          <a href="mailto:sam.burke99@gmail.com" class="print-link inline-flex items-center gap-2 hover:text-slate-900 transition-colors group">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-4 h-4 text-brand-accent">
               <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
             </svg>
             sam.burke99@gmail.com
           </a>
-          <a href="https://github.com/Burkes321" target="_blank" class="print-link inline-flex items-center gap-2 hover:text-white transition-colors group">
-            <svg class="w-4 h-4 text-blue-400 group-hover:text-blue-300" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <a href="https://github.com/Burkes321" target="_blank" class="print-link inline-flex items-center gap-2 hover:text-slate-900 transition-colors group">
+            <svg class="w-4 h-4 text-brand-accent" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
             </svg>
             github.com/Burkes321
           </a>
-          <a href="https://samuel-burke-dev.vercel.app/" target="_blank" class="print-link inline-flex items-center gap-2 hover:text-white transition-colors group">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-4 h-4 text-blue-400 group-hover:text-blue-300">
+          <a href="https://samuel-burke-dev.vercel.app/" target="_blank" class="print-link inline-flex items-center gap-2 hover:text-slate-900 transition-colors group">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-4 h-4 text-brand-accent">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-.778.099-1.533.284-2.253" />
             </svg>
             samuel-burke-dev.vercel.app
           </a>
-          <span class="inline-flex items-center gap-2 text-slate-400">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-4 h-4 text-blue-400">
+          <span class="inline-flex items-center gap-2 text-slate-600">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="w-4 h-4 text-brand-accent">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
             </svg>
@@ -72,15 +68,12 @@
     </header>
 
     <!-- Professional Summary Card -->
-    <section class="mb-10 bg-brand-card/40 border border-brand-border print-no-bg rounded-2xl p-6 md:p-8 backdrop-blur-md relative overflow-hidden">
-      <!-- Glow Decorator (hidden in print) -->
-      <div class="no-print absolute top-0 right-0 w-24 h-24 bg-blue-500/10 rounded-full blur-2xl"></div>
-      
-      <h2 class="text-xl md:text-2xl font-bold text-white mb-4 flex items-center gap-3">
-        <span class="no-print flex w-2 h-6 bg-blue-500 rounded-full"></span>
+    <section class="mb-10 bg-brand-card/50 border border-brand-border print-no-bg rounded-2xl p-6 md:p-8 backdrop-blur-md relative overflow-hidden">
+      <h2 class="text-xl md:text-2xl font-bold text-slate-900 mb-4 flex items-center gap-3">
+        <span class="no-print flex w-2 h-6 bg-brand-accent rounded-full"></span>
         Professional Summary
       </h2>
-      <p class="text-slate-300 leading-relaxed font-sans text-[15px] md:text-[16px]">
+      <p class="text-slate-700 leading-relaxed font-sans text-[15px] md:text-[16px]">
         Dedicated and driven Full-Stack Software Engineer with a strong mathematical background and proven experience delivering complex data analytics and B2B web applications. Proficient in React, Next.js, TypeScript, Node.js, and modern state/data fetching libraries (React Query, Redux). Quick learner with a passion for problem-solving, clean code, and user-centric design.
       </p>
     </section>
@@ -93,8 +86,8 @@
         
         <!-- Experience Section -->
         <section class="space-y-8">
-          <h2 class="text-xl md:text-2xl font-bold text-white border-b border-brand-border pb-3 mb-6 flex items-center gap-3">
-            <span class="no-print flex w-2 h-6 bg-blue-500 rounded-full"></span>
+          <h2 class="text-xl md:text-2xl font-bold text-slate-900 border-b border-brand-border pb-3 mb-6 flex items-center gap-3">
+            <span class="no-print flex w-2 h-6 bg-brand-accent rounded-full"></span>
             Professional Experience
           </h2>
 
@@ -104,34 +97,34 @@
             <!-- Job 1: Emplifi -->
             <article class="relative print-avoid-break">
               <!-- Timeline Dot -->
-              <div class="absolute -left-[31px] top-1.5 w-4 h-4 bg-brand-bg border-[3px] border-blue-500 rounded-full"></div>
+              <div class="absolute -left-[31px] top-1.5 w-4 h-4 bg-brand-bg border-[3px] border-brand-accent rounded-full"></div>
               
               <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1.5 mb-4">
                 <div>
-                  <h3 class="text-xl font-bold text-white tracking-tight">Software Engineer</h3>
-                  <p class="text-blue-400 font-semibold text-sm">Emplifi</p>
+                  <h3 class="text-xl font-bold text-slate-900 tracking-tight">Software Engineer</h3>
+                  <p class="text-brand-accent font-semibold text-sm">Emplifi</p>
                 </div>
                 <div class="text-right sm:text-right flex flex-row sm:flex-col items-center sm:items-end gap-2 sm:gap-0">
-                  <span class="text-xs font-semibold px-2.5 py-1 bg-slate-800 border border-brand-border rounded-full text-slate-300 print-no-bg print:border-none print:p-0 print:text-slate-500">Jan 2023 – Present</span>
+                  <span class="text-xs font-semibold px-2.5 py-1 bg-brand-card border border-brand-border rounded-full text-slate-700 print-no-bg print:border-none print:p-0 print:text-slate-500">Jan 2023 – Present</span>
                   <span class="text-xs text-slate-500 mt-1">Prague, Czechia</span>
                 </div>
               </div>
               
-              <ul class="space-y-2.5 text-sm text-slate-300 list-disc list-outside pl-4 leading-relaxed">
+              <ul class="space-y-2.5 text-sm text-slate-700 list-disc list-outside pl-4 leading-relaxed">
                 <li>
-                  <strong class="text-slate-200">Legacy Modernization:</strong> Significantly improved B2B application performance and load times by refactoring legacy components (React &lt; 16.8 and Redux) into modern functional components with hooks, utilizing React Query for optimized caching and state management.
+                  <strong class="text-slate-900">Legacy Modernization:</strong> Significantly improved B2B application performance and load times by refactoring legacy components (React &lt; 16.8 and Redux) into modern functional components with hooks, utilizing React Query for optimized caching and state management.
                 </li>
                 <li>
-                  <strong class="text-slate-200">UI/UX Redesign:</strong> Collaborated on a comprehensive settings section redesign, modernizing user workflows and improving visual consistency.
+                  <strong class="text-slate-900">UI/UX Redesign:</strong> Collaborated on a comprehensive settings section redesign, modernizing user workflows and improving visual consistency.
                 </li>
                 <li>
-                  <strong class="text-slate-200">Epic Management:</strong> Successfully owned and delivered two major product epics, coordinating task breakdowns, structuring Jira tickets, mapping dependencies, and managing estimates.
+                  <strong class="text-slate-900">Epic Management:</strong> Successfully owned and delivered two major product epics, coordinating task breakdowns, structuring Jira tickets, mapping dependencies, and managing estimates.
                 </li>
                 <li>
-                  <strong class="text-slate-200">Agile Delivery:</strong> Participated actively in sprint planning and estimations, facilitating smoother team capacity planning and story point assignments.
+                  <strong class="text-slate-900">Agile Delivery:</strong> Participated actively in sprint planning and estimations, facilitating smoother team capacity planning and story point assignments.
                 </li>
                 <li>
-                  <strong class="text-slate-200">Rapid Integration:</strong> Onboarded swiftly, shipping production-ready features using Redux-Saga and React Query within the first week of joining.
+                  <strong class="text-slate-900">Rapid Integration:</strong> Onboarded swiftly, shipping production-ready features using Redux-Saga and React Query within the first week of joining.
                 </li>
               </ul>
             </article>
@@ -139,31 +132,31 @@
             <!-- Job 2: GoodData -->
             <article class="relative print-avoid-break">
               <!-- Timeline Dot -->
-              <div class="absolute -left-[31px] top-1.5 w-4 h-4 bg-brand-bg border-[3px] border-blue-500/60 rounded-full"></div>
+              <div class="absolute -left-[31px] top-1.5 w-4 h-4 bg-brand-bg border-[3px] border-brand-accent/70 rounded-full"></div>
 
               <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1.5 mb-4">
                 <div>
-                  <h3 class="text-xl font-bold text-white tracking-tight">Software Engineer</h3>
-                  <p class="text-blue-400/80 font-semibold text-sm">GoodData</p>
+                  <h3 class="text-xl font-bold text-slate-900 tracking-tight">Software Engineer</h3>
+                  <p class="text-brand-accent/80 font-semibold text-sm">GoodData</p>
                 </div>
                 <div class="text-right sm:text-right flex flex-row sm:flex-col items-center sm:items-end gap-2 sm:gap-0">
-                  <span class="text-xs font-semibold px-2.5 py-1 bg-slate-800 border border-brand-border rounded-full text-slate-300 print-no-bg print:border-none print:p-0 print:text-slate-500">Aug 2021 – Dec 2022</span>
+                  <span class="text-xs font-semibold px-2.5 py-1 bg-brand-card border border-brand-border rounded-full text-slate-700 print-no-bg print:border-none print:p-0 print:text-slate-500">Aug 2021 – Dec 2022</span>
                   <span class="text-xs text-slate-500 mt-1">Prague, Czechia</span>
                 </div>
               </div>
 
-              <ul class="space-y-2.5 text-sm text-slate-300 list-disc list-outside pl-4 leading-relaxed">
+              <ul class="space-y-2.5 text-sm text-slate-700 list-disc list-outside pl-4 leading-relaxed">
                 <li>
-                  <strong class="text-slate-200">Custom Dashboards:</strong> Developed responsive, client-facing analytics dashboards using React and TypeScript to support business intelligence needs.
+                  <strong class="text-slate-900">Custom Dashboards:</strong> Developed responsive, client-facing analytics dashboards using React and TypeScript to support business intelligence needs.
                 </li>
                 <li>
-                  <strong class="text-slate-200">Data Visualizations:</strong> Built custom interactive charts and complex visualizations by configuring and styling the Recharts library.
+                  <strong class="text-slate-900">Data Visualizations:</strong> Built custom interactive charts and complex visualizations by configuring and styling the Recharts library.
                 </li>
                 <li>
-                  <strong class="text-slate-200">Open-Source SDK Contributions:</strong> Contributed code to the open-source GoodData UI SDK to expand reusable dashboard visualization components.
+                  <strong class="text-slate-900">Open-Source SDK Contributions:</strong> Contributed code to the open-source GoodData UI SDK to expand reusable dashboard visualization components.
                 </li>
                 <li>
-                  <strong class="text-slate-200">Third-Party Integrations:</strong> Configured and adapted libraries like React Router, Emotion CSS, and Styled Components to custom design system guidelines.
+                  <strong class="text-slate-900">Third-Party Integrations:</strong> Configured and adapted libraries like React Router, Emotion CSS, and Styled Components to custom design system guidelines.
                 </li>
               </ul>
             </article>
@@ -171,25 +164,25 @@
             <!-- Job 3: Freelance -->
             <article class="relative print-avoid-break">
               <!-- Timeline Dot -->
-              <div class="absolute -left-[31px] top-1.5 w-4 h-4 bg-brand-bg border-[3px] border-blue-500/40 rounded-full"></div>
+              <div class="absolute -left-[31px] top-1.5 w-4 h-4 bg-brand-bg border-[3px] border-brand-accent/50 rounded-full"></div>
 
               <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1.5 mb-4">
                 <div>
-                  <h3 class="text-xl font-bold text-white tracking-tight">Front-End Developer (Contract)</h3>
-                  <p class="text-blue-400/60 font-semibold text-sm">CloudGuard AI</p>
+                  <h3 class="text-xl font-bold text-slate-900 tracking-tight">Front-End Developer (Contract)</h3>
+                  <p class="text-brand-accent/60 font-semibold text-sm">CloudGuard AI</p>
                 </div>
                 <div class="text-right sm:text-right flex flex-row sm:flex-col items-center sm:items-end gap-2 sm:gap-0">
-                  <span class="text-xs font-semibold px-2.5 py-1 bg-slate-800 border border-brand-border rounded-full text-slate-300 print-no-bg print:border-none print:p-0 print:text-slate-500">3-Month Project</span>
+                  <span class="text-xs font-semibold px-2.5 py-1 bg-brand-card border border-brand-border rounded-full text-slate-700 print-no-bg print:border-none print:p-0 print:text-slate-500">3-Month Project</span>
                   <span class="text-xs text-slate-500 mt-1">UK-Based Remote</span>
                 </div>
               </div>
 
-              <ul class="space-y-2.5 text-sm text-slate-300 list-disc list-outside pl-4 leading-relaxed">
+              <ul class="space-y-2.5 text-sm text-slate-700 list-disc list-outside pl-4 leading-relaxed">
                 <li>
-                  <strong class="text-slate-200">Greenfield Dashboard:</strong> Served as the sole front-end engineer to build a cyber-security threat dashboard displaying Microsoft Sentinel log insights.
+                  <strong class="text-slate-900">Greenfield Dashboard:</strong> Served as the sole front-end engineer to build a cyber-security threat dashboard displaying Microsoft Sentinel log insights.
                 </li>
                 <li>
-                  <strong class="text-slate-200">Tech Stack:</strong> Designed and implemented the web dashboard using React, Next.js, TypeScript, and Recharts.
+                  <strong class="text-slate-900">Tech Stack:</strong> Designed and implemented the web dashboard using React, Next.js, TypeScript, and Recharts.
                 </li>
               </ul>
             </article>
@@ -204,46 +197,46 @@
 
         <!-- Skills Section -->
         <section class="space-y-6">
-          <h2 class="text-xl font-bold text-white border-b border-brand-border pb-3 flex items-center gap-3">
-            <span class="no-print flex w-2 h-6 bg-blue-500 rounded-full"></span>
+          <h2 class="text-xl font-bold text-slate-900 border-b border-brand-border pb-3 flex items-center gap-3">
+            <span class="no-print flex w-2 h-6 bg-brand-accent rounded-full"></span>
             Technical Skills
           </h2>
 
           <div class="space-y-5 print-avoid-break">
             <!-- Front-end -->
             <div class="space-y-2.5">
-              <h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Front-End</h3>
+              <h3 class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Front-End</h3>
               <div class="flex flex-wrap gap-1.5">
-                <span class="text-xs px-2.5 py-1 bg-slate-800/80 border border-brand-border rounded text-slate-200">JavaScript / TypeScript</span>
-                <span class="text-xs px-2.5 py-1 bg-slate-800/80 border border-brand-border rounded text-slate-200">React</span>
-                <span class="text-xs px-2.5 py-1 bg-slate-800/80 border border-brand-border rounded text-slate-200">Next.js</span>
-                <span class="text-xs px-2.5 py-1 bg-slate-800/80 border border-brand-border rounded text-slate-200">React Query (TanStack)</span>
-                <span class="text-xs px-2.5 py-1 bg-slate-800/80 border border-brand-border rounded text-slate-200">Redux / Redux-Saga</span>
-                <span class="text-xs px-2.5 py-1 bg-slate-800/80 border border-brand-border rounded text-slate-200">HTML5 / CSS3 / Sass</span>
-                <span class="text-xs px-2.5 py-1 bg-slate-800/80 border border-brand-border rounded text-slate-200">Tailwind CSS</span>
+                <span class="text-xs px-2.5 py-1 bg-brand-card border border-brand-border rounded text-slate-800 hover:bg-slate-200/50 transition-colors">JavaScript / TypeScript</span>
+                <span class="text-xs px-2.5 py-1 bg-brand-card border border-brand-border rounded text-slate-800 hover:bg-slate-200/50 transition-colors">React</span>
+                <span class="text-xs px-2.5 py-1 bg-brand-card border border-brand-border rounded text-slate-800 hover:bg-slate-200/50 transition-colors">Next.js</span>
+                <span class="text-xs px-2.5 py-1 bg-brand-card border border-brand-border rounded text-slate-800 hover:bg-slate-200/50 transition-colors">React Query (TanStack)</span>
+                <span class="text-xs px-2.5 py-1 bg-brand-card border border-brand-border rounded text-slate-800 hover:bg-slate-200/50 transition-colors">Redux / Redux-Saga</span>
+                <span class="text-xs px-2.5 py-1 bg-brand-card border border-brand-border rounded text-slate-800 hover:bg-slate-200/50 transition-colors">HTML5 / CSS3 / Sass</span>
+                <span class="text-xs px-2.5 py-1 bg-brand-card border border-brand-border rounded text-slate-800 hover:bg-slate-200/50 transition-colors">Tailwind CSS</span>
               </div>
             </div>
 
             <!-- Back-end & Database -->
             <div class="space-y-2.5">
-              <h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Back-End & Databases</h3>
+              <h3 class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Back-End & Databases</h3>
               <div class="flex flex-wrap gap-1.5">
-                <span class="text-xs px-2.5 py-1 bg-slate-800/80 border border-brand-border rounded text-slate-200">Node.js</span>
-                <span class="text-xs px-2.5 py-1 bg-slate-800/80 border border-brand-border rounded text-slate-200">Express</span>
-                <span class="text-xs px-2.5 py-1 bg-slate-800/80 border border-brand-border rounded text-slate-200">C# / ASP.NET Core</span>
-                <span class="text-xs px-2.5 py-1 bg-slate-800/80 border border-brand-border rounded text-slate-200">MySQL</span>
-                <span class="text-xs px-2.5 py-1 bg-slate-800/80 border border-brand-border rounded text-slate-200">PostgreSQL</span>
+                <span class="text-xs px-2.5 py-1 bg-brand-card border border-brand-border rounded text-slate-800 hover:bg-slate-200/50 transition-colors">Node.js</span>
+                <span class="text-xs px-2.5 py-1 bg-brand-card border border-brand-border rounded text-slate-800 hover:bg-slate-200/50 transition-colors">Express</span>
+                <span class="text-xs px-2.5 py-1 bg-brand-card border border-brand-border rounded text-slate-800 hover:bg-slate-200/50 transition-colors">C# / ASP.NET Core</span>
+                <span class="text-xs px-2.5 py-1 bg-brand-card border border-brand-border rounded text-slate-800 hover:bg-slate-200/50 transition-colors">MySQL</span>
+                <span class="text-xs px-2.5 py-1 bg-brand-card border border-brand-border rounded text-slate-800 hover:bg-slate-200/50 transition-colors">PostgreSQL</span>
               </div>
             </div>
 
             <!-- Other Tech -->
             <div class="space-y-2.5">
-              <h3 class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Other Tech & Tools</h3>
+              <h3 class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Other Tech & Tools</h3>
               <div class="flex flex-wrap gap-1.5">
-                <span class="text-xs px-2.5 py-1 bg-slate-800/80 border border-brand-border rounded text-slate-200">Python (basic)</span>
-                <span class="text-xs px-2.5 py-1 bg-slate-800/80 border border-brand-border rounded text-slate-200">Git & GitHub</span>
-                <span class="text-xs px-2.5 py-1 bg-slate-800/80 border border-brand-border rounded text-slate-200">REST APIs</span>
-                <span class="text-xs px-2.5 py-1 bg-slate-800/80 border border-brand-border rounded text-slate-200">Jira / Confluence</span>
+                <span class="text-xs px-2.5 py-1 bg-brand-card border border-brand-border rounded text-slate-800 hover:bg-slate-200/50 transition-colors">Python (basic)</span>
+                <span class="text-xs px-2.5 py-1 bg-brand-card border border-brand-border rounded text-slate-800 hover:bg-slate-200/50 transition-colors">Git & GitHub</span>
+                <span class="text-xs px-2.5 py-1 bg-brand-card border border-brand-border rounded text-slate-800 hover:bg-slate-200/50 transition-colors">REST APIs</span>
+                <span class="text-xs px-2.5 py-1 bg-brand-card border border-brand-border rounded text-slate-800 hover:bg-slate-200/50 transition-colors">Jira / Confluence</span>
               </div>
             </div>
           </div>
@@ -251,35 +244,35 @@
 
         <!-- Competencies Section -->
         <section class="space-y-6 print-avoid-break">
-          <h2 class="text-xl font-bold text-white border-b border-brand-border pb-3 flex items-center gap-3">
-            <span class="no-print flex w-2 h-6 bg-blue-500 rounded-full"></span>
+          <h2 class="text-xl font-bold text-slate-900 border-b border-brand-border pb-3 flex items-center gap-3">
+            <span class="no-print flex w-2 h-6 bg-brand-accent rounded-full"></span>
             Competencies & Languages
           </h2>
 
-          <div class="space-y-4 text-sm text-slate-300">
-            <div class="flex justify-between border-b border-brand-border/40 pb-2">
-              <span class="text-slate-400">English</span>
-              <span class="text-white font-medium">Native</span>
+          <div class="space-y-4 text-sm text-slate-700">
+            <div class="flex justify-between border-b border-brand-border pb-2">
+              <span class="text-slate-500">English</span>
+              <span class="text-slate-800 font-medium">Native</span>
             </div>
-            <div class="flex justify-between border-b border-brand-border/40 pb-2">
-              <span class="text-slate-400">Czech</span>
-              <span class="text-white font-medium">A2 Level</span>
+            <div class="flex justify-between border-b border-brand-border pb-2">
+              <span class="text-slate-500">Czech</span>
+              <span class="text-slate-800 font-medium">A2 Level</span>
             </div>
-            <div class="flex justify-between border-b border-brand-border/40 pb-2">
-              <span class="text-slate-400">Methodology</span>
-              <span class="text-white font-medium text-right">Agile / Scrum</span>
+            <div class="flex justify-between border-b border-brand-border pb-2">
+              <span class="text-slate-500">Methodology</span>
+              <span class="text-slate-800 font-medium text-right">Agile / Scrum</span>
             </div>
             <div class="flex justify-between pb-1">
-              <span class="text-slate-400">Team Collaboration</span>
-              <span class="text-white font-medium text-right">Cross-functional</span>
+              <span class="text-slate-500">Team Collaboration</span>
+              <span class="text-slate-800 font-medium text-right">Cross-functional</span>
             </div>
           </div>
         </section>
 
         <!-- Education Section -->
         <section class="space-y-6 print-avoid-break">
-          <h2 class="text-xl font-bold text-white border-b border-brand-border pb-3 flex items-center gap-3">
-            <span class="no-print flex w-2 h-6 bg-blue-500 rounded-full"></span>
+          <h2 class="text-xl font-bold text-slate-900 border-b border-brand-border pb-3 flex items-center gap-3">
+            <span class="no-print flex w-2 h-6 bg-brand-accent rounded-full"></span>
             Education
           </h2>
 
@@ -287,22 +280,22 @@
             <!-- Bootcamp -->
             <div class="space-y-1.5">
               <div class="flex justify-between items-start">
-                <h3 class="text-sm font-bold text-white">Coding Bootcamp Praha</h3>
+                <h3 class="text-sm font-bold text-slate-900">Coding Bootcamp Praha</h3>
                 <span class="text-[11px] text-slate-500 font-medium">2021</span>
               </div>
-              <p class="text-xs text-blue-400 font-semibold">Full-Stack Web Development Certificate</p>
-              <p class="text-xs text-slate-400 leading-relaxed">
+              <p class="text-xs text-brand-accent font-semibold">Full-Stack Web Development Certificate</p>
+              <p class="text-xs text-slate-600 leading-relaxed">
                 Intensive training focused on modern JavaScript frameworks, backend databases, and agile team project delivery.
               </p>
             </div>
 
             <!-- University -->
-            <div class="space-y-1.5 border-t border-brand-border/40 pt-4">
+            <div class="space-y-1.5 border-t border-brand-border pt-4">
               <div class="flex justify-between items-start">
-                <h3 class="text-sm font-bold text-white">Lancaster University</h3>
+                <h3 class="text-sm font-bold text-slate-900">Lancaster University</h3>
                 <span class="text-[11px] text-slate-500 font-medium">2015 – 2018</span>
               </div>
-              <p class="text-xs text-blue-400 font-semibold">B.Sc. (Hons) in Mathematics</p>
+              <p class="text-xs text-brand-accent font-semibold">B.Sc. (Hons) in Mathematics</p>
               <p class="text-xs text-slate-500">
                 Grade: 2:2
               </p>
@@ -312,20 +305,20 @@
 
         <!-- Achievements Section -->
         <section class="space-y-6 print-avoid-break">
-          <h2 class="text-xl font-bold text-white border-b border-brand-border pb-3 flex items-center gap-3">
-            <span class="no-print flex w-2 h-6 bg-blue-500 rounded-full"></span>
+          <h2 class="text-xl font-bold text-slate-900 border-b border-brand-border pb-3 flex items-center gap-3">
+            <span class="no-print flex w-2 h-6 bg-brand-accent rounded-full"></span>
             Key Accomplishments
           </h2>
 
-          <ul class="space-y-3.5 text-xs text-slate-400 leading-relaxed list-disc list-outside pl-4">
+          <ul class="space-y-3.5 text-xs text-slate-600 leading-relaxed list-disc list-outside pl-4">
             <li>
-              <strong class="text-slate-300">Fast Adaptability:</strong> Transitioned from a mathematics background to full-stack engineering, rapidly shipping code within the first week on multiple new tech stacks.
+              <strong class="text-slate-800">Fast Adaptability:</strong> Transitioned from a mathematics background to full-stack engineering, rapidly shipping code within the first week on multiple new tech stacks.
             </li>
             <li>
-              <strong class="text-slate-300">Refactoring Impact:</strong> Led and executed major software modernizations, resulting in significantly faster page loads and modular code.
+              <strong class="text-slate-800">Refactoring Impact:</strong> Led and executed major software modernizations, resulting in significantly faster page loads and modular code.
             </li>
             <li>
-              <strong class="text-slate-300">Database Optimization:</strong> Optimized SQL queries to improve response times in complex data-heavy dashboard modules.
+              <strong class="text-slate-800">Database Optimization:</strong> Optimized SQL queries to improve response times in complex data-heavy dashboard modules.
             </li>
           </ul>
         </section>

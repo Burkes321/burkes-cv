@@ -6,19 +6,18 @@
   --font-display: 'Plus Jakarta Sans', sans-serif;
   --font-sans: 'Inter', sans-serif;
   
-  /* Custom brand colors for premium theme */
-  --color-brand-bg: #0b0f19;
-  --color-brand-card: #151b2c;
-  --color-brand-border: #232c45;
-  --color-brand-accent: #3b82f6;
-  --color-brand-glow: rgba(59, 130, 246, 0.15);
+  /* Custom brand colors for paper beige theme */
+  --color-brand-bg: #fbfaf7;      /* Clean warm cream/beige paper background */
+  --color-brand-card: #f4f1e8;    /* Slightly deeper beige container */
+  --color-brand-border: #e4decb;  /* Soft warm border */
+  --color-brand-accent: #000000;  /* Standard black highlight */
 }
 
 /* Base style tweaks */
 body {
   font-family: var(--font-sans);
   background-color: var(--color-brand-bg);
-  color: #f1f5f9;
+  color: #334155; /* Slate-700 for soft, premium text contrast on paper */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,8 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   /* Hide visual elements meant only for screens */
-  .no-print,
-  .glow-effect {
+  .no-print {
     display: none !important;
   }
   
